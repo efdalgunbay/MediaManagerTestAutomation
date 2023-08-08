@@ -1,2 +1,4 @@
-package com.mediaManager.pages;public class HomePage {
+package com.mediaManager.pages;
+
+public class HomePage {
 }
