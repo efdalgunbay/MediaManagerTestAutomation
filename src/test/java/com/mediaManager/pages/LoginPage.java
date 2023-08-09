@@ -11,13 +11,13 @@ public class LoginPage extends BasePage {
 @FindBy(xpath ="//div[@class='nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf']")
 public WebElement gmailbutton;
 
-    @FindBy(xpath ="//input[@class='form-control cstm-input ng-pristine ng-invalid ng-touched']")
+    @FindBy(xpath ="//input[@formcontrolname='username']")
     public WebElement userNameField;
 
-    @FindBy(xpath ="//input[@class='form-control cstm-input ng-untouched ng-pristine ng-invalid']")
+    @FindBy(xpath ="//input[@formcontrolname='password']")
     public WebElement passwordField;
 
-    @FindBy(xpath ="//button[@class='btn btn-primary lgn-btn']")
+    @FindBy(xpath ="//mat-icon[contains(text(),'login')]")
     public WebElement loginButton;
 
 
