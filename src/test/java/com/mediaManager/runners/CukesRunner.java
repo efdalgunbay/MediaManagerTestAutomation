@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {"pretty","json:target/json-report/cucumber.json"},
-        glue = "com/Demo/step_definitions",
+        glue = "com/mediaManager/step_definitions",
         features = "src/test/resources/features",
         publish = true,
         tags = "@Login",
