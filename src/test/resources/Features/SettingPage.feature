@@ -1,3 +1,4 @@
+@Login
 Feature: Setting Page
 
   Background:
@@ -5,7 +6,7 @@ Feature: Setting Page
     And Password field is filled
     And Click the login button
 
-  @Login
+
     Scenario: 1S Setting Page Control
       When Click Setting button
       Then Setting page appears

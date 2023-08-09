@@ -1,3 +1,4 @@
+@Login
 Feature: Language Bundles
 
   Background:
@@ -5,7 +6,6 @@ Feature: Language Bundles
     And Password field is filled
     And Click the login button
 
-  @Login
     Scenario: 1L Language Bundles Control
       When Click Language Bundles button
       Then Language Bundles page appears
