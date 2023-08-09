@@ -3,7 +3,7 @@ package com.mediaManager.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class HomePage {
+public class HomePage extends BasePage {
 
 
     @FindBy(xpath ="(//a[@class='nav-link'])[1]")
