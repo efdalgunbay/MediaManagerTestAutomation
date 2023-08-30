@@ -28,7 +28,7 @@ public class HomePage extends BasePage {
     @FindBy(xpath ="(//div[@class='mat-list-text'])[2]")
     public WebElement adHocFilter;
 
-    @FindBy(xpath ="//mat-label[contains(text(),'Content Type')]")
+    @FindBy(xpath ="//p[contains(text(),'Total new tasks')]")
     public WebElement contentTypeWrite;
 
     @FindBy(xpath ="(//i[contains(text(),'calendar_month')])[2]")
