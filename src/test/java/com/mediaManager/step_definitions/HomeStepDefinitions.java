@@ -112,7 +112,8 @@ public class HomeStepDefinitions {
 
     @Given("Click on Media Manager Nav Bar")
     public void MediaManagerNavBar() {
-        homePage.clearFilter.click();
+        ReusableMethods.waitFor(2);
+        homePage.mediaManagerNavBar.click();
         ReusableMethods.waitFor(2);
     }
 
