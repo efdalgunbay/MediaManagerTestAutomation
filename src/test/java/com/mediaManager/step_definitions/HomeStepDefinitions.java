@@ -28,6 +28,8 @@ public class HomeStepDefinitions {
         ReusableMethods.waitFor(3);
     }
 
+
+
     @Given("Ad-hoc selected")
     public void adHocSelect() {
         homePage.adHocFilter.click();
@@ -104,6 +106,12 @@ public class HomeStepDefinitions {
 
     @Given("Click on Clean Filter Button")
     public void clearFilterButton() {
+        homePage.clearFilter.click();
+        ReusableMethods.waitFor(2);
+    }
+
+    @Given("Click on Media Manager Nav Bar")
+    public void MediaManagerNavBar() {
         homePage.clearFilter.click();
         ReusableMethods.waitFor(2);
     }
