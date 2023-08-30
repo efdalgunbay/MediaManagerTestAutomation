@@ -1,4 +1,4 @@
-@Home
+
 Feature: Home Page
 
   Background:
@@ -6,23 +6,24 @@ Feature: Home Page
     And Password field is filled
     And Click the login button
 
-
+  @Home
     Scenario: 1H Home Page Control
       Then Home page appears
-
+  @Home
   Scenario: 2H Start Date Filter Control
     And Click on the start date filter field
     And Click on Start Date Option Field
     And Click Last Month
     And Click on Content Type Write
 
-
+  @Home
   Scenario: 3H Deadline Filter Control
     And Click on the deadline filter field
     And Select Date Option Field Clicked
     And Last 7 Days Click
     And Click on Content Type Write
 
+  @Home
   Scenario: 4H Content Type Filter Control
     And Click on Content Type
     And Ad-hoc selected
