@@ -23,7 +23,8 @@ public class HomeStepDefinitions {
 
     @Given("Click on Content Type Write")
     public void clickOnContentTypeWrite() {
-        homePage.contentTypeWrite.click();
+        ReusableMethods.waitFor(3);
+        ReusableMethods.doubleClick(homePage.contentTypeWrite);
         ReusableMethods.waitFor(3);
     }
 
