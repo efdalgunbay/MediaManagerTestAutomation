@@ -12,13 +12,13 @@ public class LoginStepDefinitions {
 
         @Given("Fill in the username field")
     public void username_field() {
-           loginPage.userNameField.sendKeys("efdal.pm");
+           loginPage.userNameField.sendKeys(ConfigReader.getProperty("username"));
            ReusableMethods.waitFor(2);
     }
 
     @Given("Password field is filled")
     public void password_field() {
-       loginPage.passwordField.sendKeys("1611@Argos");
+       loginPage.passwordField.sendKeys(ConfigReader.getProperty("password"));
         ReusableMethods.waitFor(2);
     }
 

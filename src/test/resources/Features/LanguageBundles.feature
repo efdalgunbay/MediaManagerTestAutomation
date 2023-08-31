@@ -1,4 +1,4 @@
-@Login
+@Reg
 Feature: Language Bundles
 
   Background:

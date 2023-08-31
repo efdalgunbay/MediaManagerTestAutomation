@@ -1,4 +1,4 @@
-@Login
+@Reg
 Feature: Users Page
 
   Background:

@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         glue = "com/mediaManager/step_definitions",
         features = "src/test/resources/Features",
         publish = true,
-        tags = "@Home",
+        tags = "@Reg",
         dryRun =false
 
 

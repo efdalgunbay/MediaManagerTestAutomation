@@ -1,4 +1,4 @@
-@Home
+@Reg
 Feature: Home Page
 
   Background:
