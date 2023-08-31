@@ -34,7 +34,7 @@ public class HomePage extends BasePage {
     @FindBy(xpath ="(//span[@class='mat-button-wrapper'])[4]")
     public WebElement deadlineFilter;
 
-    @FindBy(css ="div[class='mat-form-field-infix ng-tns-c117-6']")
+    @FindBy(xpath ="//mat-select[@id='dateOption']")
     public WebElement selectDateOption;
 
     @FindBy(xpath ="//span[contains(text(),'Last month ')]")
@@ -46,7 +46,7 @@ public class HomePage extends BasePage {
     @FindBy(xpath ="//p[contains(text(),' Android')]")
     public WebElement productandroidFilter;
 
-    @FindBy(xpath ="(//span[@class='mat-button-focus-overlay'])[8]")
+    @FindBy(xpath ="//i[@class='material-icons']")
     public WebElement clearFilter;
 
     @FindBy(xpath ="(//span[@class='mat-button-wrapper'])[3]")
@@ -58,7 +58,7 @@ public class HomePage extends BasePage {
     @FindBy(xpath ="(//span[@class='mat-button-wrapper'])[7]")
     public WebElement productFilter;
 
-    @FindBy(xpath ="//div[@id='mat-select-value-1']")
+    @FindBy(xpath ="//span[contains(text(),'Last 3 months')]")
     public WebElement selectDateOptionFilter;
 
     @FindBy(xpath ="(//span[@class='mat-option-text'])[1]")
@@ -68,3 +68,4 @@ public class HomePage extends BasePage {
     public WebElement mediaManagerNavBar;
 
 }
+
