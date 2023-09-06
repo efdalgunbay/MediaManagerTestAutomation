@@ -6,13 +6,16 @@ import com.mediaManager.utilities.ConfigReader;
 import com.mediaManager.utilities.ReusableMethods;
 import io.cucumber.java.en.Given;
 
+import java.awt.image.RescaleOp;
+
 public class ProjectStepDefinitions {
 HomePage homePage=new HomePage();
 ProjectPage projectPage=new ProjectPage();
 
     @Given("Click Project button")
     public void project_button() {
-        homePage.projectNavBar.click();
+        ReusableMethods.waitFor(3);
+        ReusableMethods.doubleClick(homePage.projectNavBar);
         ReusableMethods.waitFor(2);
     }
 
