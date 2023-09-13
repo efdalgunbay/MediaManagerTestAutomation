@@ -115,6 +115,64 @@ ProjectPage projectPage=new ProjectPage();
 
     }
 
+    @Given("Click on the program filter area")
+    public void programFilterArea() {
+        projectPage.programFilterfield.click();
+        ReusableMethods.waitFor(2);
+
+    }
+
+    @Given("Archive Program Filter is Selected")
+    public void filterisSelected() {
+        projectPage.archivedButton.click();
+        ReusableMethods.waitFor(2);
+
+    }
+
+    @Given("Archive Programs Are Seen Listed")
+    public void programsAreSeenListed() {
+        projectPage.archivedPrograms.isDisplayed();
+        ReusableMethods.waitFor(2);
+
+    }
+
+    @Given("It is seen that the program name comes according to the entered keyword")
+    public void accordingTheEnteredKeyword() {
+        projectPage.automationProjectField.isDisplayed();
+        ReusableMethods.waitFor(2);
+
+    }
+
+
+    @Given("Click on Ready to Start Task Status")
+    public void clickonReadytoStart() {
+        projectPage.readyToStartTaskFilter.click();
+        ReusableMethods.waitFor(2);
+
+    }
+
+
+    @Given("Task Status Filter Area is Clicked")
+    public void taskStatusFilterArea() {
+       projectPage.taskStatusFilterField.click();
+       ReusableMethods.waitFor(1);
+
+    }
+
+    @Given("It is seen that tasks that are Ready to Start are coming")
+    public void readytoStartAreComing() {
+        projectPage.readyToStartExistingTasks.isDisplayed();
+        ReusableMethods.waitFor(1);
+    }
+
+
+
+
+
+
+
+
+
 
 
 

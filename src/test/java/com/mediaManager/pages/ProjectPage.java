@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class ProjectPage extends BasePage {
 
-    @FindBy(xpath ="//div[contains(text(),' Projects')]")
+    @FindBy(xpath ="//div[contains(text(),' Programs ')]")
     public WebElement projectPageTitle;
 
     @FindBy(xpath ="//input[@name='projectName']")
@@ -59,6 +59,34 @@ public class ProjectPage extends BasePage {
 
     @FindBy(xpath ="//td[contains(text(),'Test7-18Blog')]")
     public WebElement newBlogTask;
+
+    @FindBy(xpath ="(//span[@class='mat-button-wrapper'])[5]")
+    public WebElement programFilterfield;
+
+    @FindBy(xpath ="//button[contains(text(),' Archived programs ')]")
+    public WebElement archivedButton;
+
+    @FindBy(xpath ="(//div[@class='ng-tns-c268-120'])[1]")
+    public WebElement archivedPrograms;
+
+    @FindBy(xpath ="(//div[@class='ng-tns-c268-120'])[1]")
+    public WebElement automationProjectField;
+
+    @FindBy(xpath ="(//span[@class='mat-button-wrapper'])[4]")
+    public WebElement taskStatusFilterField;
+
+    @FindBy(xpath ="//button[contains(text(),' Ready to Start')]")
+    public WebElement readyToStartTaskFilter;
+
+    @FindBy(xpath ="//div[contains(text(),' Ready to Start')]")
+    public WebElement readyToStartExistingTasks;
+
+
+
+
+
+
+
 
 
 }

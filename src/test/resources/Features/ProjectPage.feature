@@ -25,5 +25,23 @@ Feature: Project Page
         And Click Save Button
         Then New Blog Task Appears to be Saved
 
+        Scenario: 3P Sending To Arcgived Any Existing Project On Programs Page
+          When Click Project button
+          And Click on the program filter area
+          And Archive Program Filter is Selected
+          And Archive Programs Are Seen Listed
+
+          Scenario: 4P Searching By Keyword Functionality On Programs Page
+            When Click Project button
+            And The project is searched in the Project Area
+            And It is seen that the program name comes according to the entered keyword
+
+            Scenario: 5P Filtering By Status On Programs Page
+              When Click Project button
+              And Task Status Filter Area is Clicked
+              And Click on Ready to Start Task Status
+              And It is seen that tasks that are Ready to Start are coming
+
+
 
 
