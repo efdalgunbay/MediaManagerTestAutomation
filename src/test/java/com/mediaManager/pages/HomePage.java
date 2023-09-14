@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 public class HomePage extends BasePage {
 
 
-    @FindBy(xpath ="//p[contains(text(),'Total new tasks')]")
+    @FindBy(xpath ="(//a[@class='nav-link'])[1]")
     public WebElement projectNavBar;
 
     @FindBy(xpath ="(//a[@class='nav-link'])[2]")
