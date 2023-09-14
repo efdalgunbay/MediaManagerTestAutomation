@@ -43,5 +43,11 @@ Feature: Project Page
               And It is seen that tasks that are Ready to Start are coming
 
 
+  Scenario: 6P Filtering By Start Date and Delivered Date On Programs Page
+    When Click Project button
+    And Click on the Start Date Filter Field
+    And Any Date Selected
+    Then It is seen that it is filtered according to the selected date
+
 
 

@@ -166,6 +166,25 @@ ProjectPage projectPage=new ProjectPage();
     }
 
 
+    @Given("Click on the Start Date Filter Field")
+    public void startDateFilterField() {
+        projectPage.startDateFilterButton.click();
+        ReusableMethods.waitFor(1);
+    }
+
+    @Given("Any Date Selected")
+    public void anyDateSelected() {
+        projectPage.previousMonthButton.click();
+        ReusableMethods.waitFor(1);
+        projectPage.theTwentyFirstMonth.click();
+        ReusableMethods.waitFor(1);
+    }
+
+    @Given("It is seen that it is filtered according to the selected date")
+    public void selectedDateVerify() {
+        projectPage.startDateVerification.isDisplayed();
+        ReusableMethods.waitFor(1);
+    }
 
 
 

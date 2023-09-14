@@ -83,6 +83,17 @@ public class ProjectPage extends BasePage {
 
 
 
+    @FindBy(xpath ="(//span[@class='mat-button-wrapper'])[6]")
+    public WebElement startDateFilterButton;
+
+    @FindBy(xpath ="(//span[@class='mat-button-focus-overlay'])[44]")
+    public WebElement  previousMonthButton;
+
+    @FindBy(xpath ="//div[contains(text(),' 21 ')]")
+    public WebElement  theTwentyFirstMonth;
+
+    @FindBy(xpath ="//div[contains(text(),' Twitter Automation')]")
+    public WebElement  startDateVerification;
 
 
 
