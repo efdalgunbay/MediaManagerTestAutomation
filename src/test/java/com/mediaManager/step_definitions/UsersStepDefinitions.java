@@ -26,4 +26,31 @@ public class UsersStepDefinitions {
 
 
     }
+
+    @Given("Status Filter Area is Clicked")
+    public void statusFilterArea() {
+        usersPage.statusFilterField.click();
+        ReusableMethods.waitFor(1);
+    }
+
+
+    @Given("Inactive Filter is Selected")
+    public void inactiveFilter() {
+        usersPage.statusFilterInactive.click();
+        ReusableMethods.waitFor(2);
+    }
+
+
+    @Given("Click on the Clean Filter Button")
+    public void cleanFilterButton() {
+        usersPage.usersFilterClearButton.click();
+        ReusableMethods.waitFor(6);
+    }
+
+    @Given("It is seen that the filter is cleaned")
+    public void filterisCleaned() {
+        usersPage.clearFiltreVerify.isDisplayed();
+        ReusableMethods.waitFor(2);
+
+    }
 }
