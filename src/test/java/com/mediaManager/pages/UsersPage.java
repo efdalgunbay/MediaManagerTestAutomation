@@ -31,7 +31,7 @@ public class UsersPage extends BasePage {
     @FindBy(xpath ="//td[contains(text(),' New client ')]")
     public WebElement UsersClientNameSearchingVerfy;
 
-    @FindBy(xpath ="//label[@id='mat-form-field-label-15']")
+    @FindBy(xpath ="//div[@id='mat-select-value-3']")
     public WebElement userPageRole;
 
     @FindBy(xpath =" (//span[@class='mat-option-text'])[2]")
