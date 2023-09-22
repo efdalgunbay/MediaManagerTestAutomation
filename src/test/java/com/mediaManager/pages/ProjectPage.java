@@ -66,10 +66,10 @@ public class ProjectPage extends BasePage {
     @FindBy(xpath ="//button[contains(text(),' Archived programs ')]")
     public WebElement archivedButton;
 
-    @FindBy(xpath ="(//div[@class='ng-tns-c268-120'])[1]")
+    @FindBy(xpath ="(//i[contains(text(),'unarchive')])[1]")
     public WebElement archivedPrograms;
 
-    @FindBy(xpath ="(//div[@class='ng-tns-c268-120'])[1]")
+    @FindBy(xpath ="//div[contains(text(),' Automation Project')]")
     public WebElement automationProjectField;
 
     @FindBy(xpath ="(//span[@class='mat-button-wrapper'])[4]")
@@ -86,7 +86,7 @@ public class ProjectPage extends BasePage {
     @FindBy(xpath ="(//span[@class='mat-button-wrapper'])[6]")
     public WebElement startDateFilterButton;
 
-    @FindBy(xpath ="(//span[@class='mat-button-focus-overlay'])[44]")
+    @FindBy(xpath ="//button[@aria-label='Previous month']")
     public WebElement  previousMonthButton;
 
     @FindBy(xpath ="//div[contains(text(),' 21 ')]")
