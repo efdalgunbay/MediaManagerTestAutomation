@@ -14,16 +14,16 @@ public class ProjectPage extends BasePage {
     @FindBy(xpath ="(//i[@class='material-icons'])[4]")
     public WebElement openTask;
 
-    @FindBy(xpath ="//span[@class='mat-ripple mat-button-ripple']")
+    @FindBy(xpath ="//button[@mattooltip='Add Project']")
     public WebElement addTask;
 
-    @FindBy(xpath ="//div[@class='mat-ripple mat-menu-ripple']")
+    @FindBy(xpath ="//button[contains(text(),' Blog ')]")
     public WebElement blogTask;
 
     @FindBy(xpath ="//input[@id='taskTitle']")
     public WebElement taskTitle;
 
-    @FindBy(xpath ="//div[@class='mat-form-field-infix ng-tns-c117-199']")
+    @FindBy(xpath ="//input[@id='clientService']")
     public WebElement services;
 
     @FindBy(xpath ="(//span[@class='mat-option-text'])[1]")
