@@ -9,7 +9,7 @@ public class UsersPage extends BasePage {
     public WebElement usersTitle;
 
 
-    @FindBy(xpath ="//div[@id='mat-select-value-25']")
+    @FindBy(xpath ="//div[@id='mat-select-value-5']")
     public WebElement statusFilterField;
 
     @FindBy(xpath ="(//span[@class='mat-option-text'])[1]")
