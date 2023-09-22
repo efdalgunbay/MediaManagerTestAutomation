@@ -23,4 +23,20 @@ public class UsersPage extends BasePage {
 
     @FindBy(xpath ="(//td[contains(text(),' Active ')])[1]")
     public WebElement clearFiltreVerify;
+
+
+    @FindBy(xpath ="//td[contains(text(),' michael ')]")
+    public WebElement nameSearcingVerifyUserPage;
+
+    @FindBy(xpath ="//td[contains(text(),' New client ')]")
+    public WebElement UsersClientNameSearchingVerfy;
+
+    @FindBy(xpath ="//label[@id='mat-form-field-label-15']")
+    public WebElement userPageRole;
+
+    @FindBy(xpath =" (//span[@class='mat-option-text'])[2]")
+    public WebElement userPageRolePM;
+
+
+
 }

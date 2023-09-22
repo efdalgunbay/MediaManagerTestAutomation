@@ -1,6 +1,7 @@
 package com.mediaManager.step_definitions;
 
 import com.mediaManager.pages.HomePage;
+import com.mediaManager.pages.LanguageBundlesPage;
 import com.mediaManager.pages.UsersPage;
 import com.mediaManager.utilities.ConfigReader;
 import com.mediaManager.utilities.ReusableMethods;
@@ -12,6 +13,7 @@ public class UsersStepDefinitions {
 
     HomePage homePage=new HomePage();
     UsersPage usersPage=new UsersPage();
+    LanguageBundlesPage languageBundlesPage=new LanguageBundlesPage();
 
     @Given("Click User button")
     public void user_button() {
@@ -53,4 +55,46 @@ public class UsersStepDefinitions {
         ReusableMethods.waitFor(2);
 
     }
+
+    @Given("A keyword is entered in the name field")
+    public void enteredNameField() {
+        languageBundlesPage.languageBundlesNameField.click();
+        languageBundlesPage.languageBundlesNameField.sendKeys(ConfigReader.getProperty("user_page_user_name"));
+        ReusableMethods.waitFor(2);
+
+    }
+
+    @Given("It appears that you are searching by keyword")
+    public void searchingByKeyword() {
+        usersPage.nameSearcingVerifyUserPage.isDisplayed();
+        ReusableMethods.waitFor(2);
+
+    }
+
+    @Given("Keyword is entered in the client name field Users Page")
+    public void searchingByKeywordUsers() {
+      languageBundlesPage.languageBundlesclientNameField.sendKeys(ConfigReader.getProperty("user_name_client_name"));
+        ReusableMethods.waitFor(2);
+    }
+
+    @Given("It appears that you are searching by client name keyword on Users Page")
+    public void nameKeywordUsersPage() {
+      usersPage.UsersClientNameSearchingVerfy.isDisplayed();
+      ReusableMethods.waitFor(2);
+    }
+
+
+    @Given("User Role Filter is made")
+    public void userRoleFilter() {
+        usersPage.userPageRole.click();
+        usersPage.userPageRolePM.click();
+        ReusableMethods.waitFor(2);
+    }
+
+
+    @Given("It is seen that the filter is made according to the selected Role")
+    public void theSelectedRole() {
+
+    }
+
 }

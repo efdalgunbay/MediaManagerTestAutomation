@@ -2,6 +2,7 @@ package com.mediaManager.step_definitions;
 
 import com.mediaManager.pages.HomePage;
 import com.mediaManager.pages.ProjectPage;
+import com.mediaManager.pages.UsersPage;
 import com.mediaManager.utilities.ConfigReader;
 import com.mediaManager.utilities.ReusableMethods;
 import io.cucumber.java.en.Given;
@@ -11,6 +12,7 @@ import java.awt.image.RescaleOp;
 public class ProjectStepDefinitions {
 HomePage homePage=new HomePage();
 ProjectPage projectPage=new ProjectPage();
+UsersPage usersPage=new UsersPage();
 
     @Given("Click Project button")
     public void project_button() {

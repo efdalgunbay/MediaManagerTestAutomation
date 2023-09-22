@@ -67,5 +67,11 @@ public class HomePage extends BasePage {
     @FindBy(xpath ="//div[contains(text(),' MediaManager ')]")
     public WebElement mediaManagerNavBar;
 
+
+
+
+
+
+
 }
 
