@@ -49,11 +49,25 @@ Feature: Project Page
     And Any Date Selected
     Then It is seen that it is filtered according to the selected date
 
-    Scenario: 7P Checking Clear Functionality On Programs Page
-      When Click Project button
-      And Task Status Filter Area is Clicked
-      And Click on Ready to Start Task Status
-      And Click on the Clean Filter Button
+  Scenario: 7P Checking Clear Functionality On Programs Page
+    When Click Project button
+    And Task Status Filter Area is Clicked
+    And Click on Ready to Start Task Status
+    And Click on the Clean Filter Button
+
+  Scenario: 8P Checking Sorting Functionality On Programs Page
+    And On the project page click the Sort by name button
+    Then It can be seen that it is sorted by name on the project page
+    And On the project page click the Sort by status button
+    Then It can be seen that it is sorted by status on the project page
+    And On the project page click the Sort by Progress button
+    Then It can be seen that the project page is sorted by Progress
+    And On the project page click the Sort by Total Cost button
+    Then On the project page it can be seen that it is sorted according to Total Cost
+    And On the project page click the Sort by Start Date button
+    Then On the project page it can be seen that it is sorted by Start Date
+
+
 
 
 

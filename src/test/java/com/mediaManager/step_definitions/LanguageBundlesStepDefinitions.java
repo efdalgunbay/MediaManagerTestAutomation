@@ -75,7 +75,51 @@ public class LanguageBundlesStepDefinitions {
     }
 
 
+    @Given("Click on the add new language button")
+    public void  addNewLanguageButton() {
+        languageBundlesPage.addNewLanguage.click();
+        ReusableMethods.waitFor(2);
+    }
+
+
+    @Given("Any name can be entered in the name field")
+    public void enteredintheNameField() {
+        languageBundlesPage.languageBundlesNameField.sendKeys(ConfigReader.getProperty("new_laguage_name"));
+        ReusableMethods.waitFor(2);
+    }
+
+    @Given("Client name is entered in the client field")
+    public void enteredintheClientField() {
+        languageBundlesPage.languageBundlesclientNameField.sendKeys(ConfigReader.getProperty("new_laguage_client_name"));
+        ReusableMethods.waitFor(2);
+    }
+
+    @Given("Language option is selected as English")
+    public void selectedasEnglish() {
+        languageBundlesPage.addNewLanguageSelection.click();
+        ReusableMethods.waitFor(2);
+        languageBundlesPage.LanguageEnglish.click();
+        ReusableMethods.waitFor(2);
+        languageBundlesPage.languagetitle.click();
+        ReusableMethods.waitFor(2);
+    }
+
+    @Given("Click on the save button")
+    public void saveButton() {
+        languageBundlesPage.addNewLanguageSaveButton.click();
+        ReusableMethods.waitFor(2);
+    }
+
+    @Given("It appears that the new language has been registered")
+    public void languageHasBeenRegistered() {
+        languageBundlesPage.addNewLanguageSuccessTitle.isDisplayed();
+        ReusableMethods.waitFor(2);
+    }
+
+
 
 }
+
+
 
 

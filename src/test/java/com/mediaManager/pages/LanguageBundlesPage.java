@@ -24,6 +24,34 @@ public class LanguageBundlesPage extends BasePage{
     @FindBy(xpath ="//td[contains(text(),' Venga ')]")
     public WebElement languageBundlesClientNameSearchingVerfy;
 
+    @FindBy(xpath ="//mat-icon[contains(text(),'playlist_add')]")
+    public WebElement addNewLanguage;
+
+
+    @FindBy(xpath ="(//span[@class='mat-button-focus-overlay'])[13]")
+    public WebElement addNewLanguageSelection;
+
+    @FindBy(xpath ="//span[contains(text(),'English (American)')]")
+    public WebElement LanguageEnglish;
+
+    @FindBy(xpath ="//p[@class='lng-prgress-title']")
+    public WebElement languagetitle;
+
+
+    @FindBy(xpath ="(//span[@class='mat-button-focus-overlay'])[14]")
+    public WebElement addNewLanguageSaveButton;
+
+    @FindBy(xpath ="//h2[@id='swal2-title']")
+    public WebElement addNewLanguageSuccessTitle;
+
+
+
+
+
+
+
+
+
 
 
 

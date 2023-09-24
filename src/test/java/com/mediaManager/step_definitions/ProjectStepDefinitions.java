@@ -188,13 +188,55 @@ UsersPage usersPage=new UsersPage();
         ReusableMethods.waitFor(1);
     }
 
+    @Given("On the project page click the Sort by name button")
+    public void sortbynameButton() {
 
+    }
 
+    @Given("It can be seen that it is sorted by name on the project page")
+    public void sortedbyNameontheProjectPage() {
 
+    }
 
+    @Given("On the project page click the Sort by status button")
+    public void sortbyStatusbButton() {
 
+    }
 
+    @Given("It can be seen that it is sorted by status on the project page")
+    public void sortedbyStatusontheProjectPage() {
 
+    }
+
+    @Given("On the project page click the Sort by Progress button")
+    public void sortbyProgressButton() {
+
+    }
+
+    @Given("It can be seen that the project page is sorted by Progress")
+    public void pageisSortedbyProgress() {
+
+    }
+
+    @Given("On the project page click the Sort by Total Cost button")
+    public void sortbyTotalCostButton() {
+
+    }
+
+    @Given("On the project page it can be seen that it is sorted according to Total Cost")
+    public void sortedAccordingtoTotalCost() {
+
+    }
+
+    @Given("On the project page click the Sort by Start Date button")
+    public void sortbyStartDateButton() {
+
+    }
+
+    @Given("On the project page it can be seen that it is sorted by Start Date")
+    public void sortedbyStartDate() {
+
+    }
 
 
 }

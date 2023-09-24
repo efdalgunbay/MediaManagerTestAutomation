@@ -81,8 +81,6 @@ public class ProjectPage extends BasePage {
     @FindBy(xpath ="//div[contains(text(),' Ready to Start')]")
     public WebElement readyToStartExistingTasks;
 
-
-
     @FindBy(xpath ="(//span[@class='mat-button-wrapper'])[6]")
     public WebElement startDateFilterButton;
 
@@ -95,9 +93,33 @@ public class ProjectPage extends BasePage {
     @FindBy(xpath ="//div[contains(text(),' Twitter Automation')]")
     public WebElement  startDateVerification;
 
+    @FindBy(xpath ="(//div[contains(text(),'Name')])[1]")
+    public WebElement  projectPageNameShorting;
 
+    @FindBy(xpath ="(//div[contains(text(),' 10-7')])[1]")
+    public WebElement  projectPageNameShortingVerify;
 
+    @FindBy(xpath ="(//div[contains(text(),'Status')])[1]")
+    public WebElement  projectPageNameStatusShorting;
 
+    @FindBy(xpath ="(//div[contains(text(),' Ready to Start ')])[1]")
+    public WebElement  projectPageNameStatusVerify;
 
+    @FindBy(xpath ="(//div[contains(text(),'Progress')])[1]")
+    public WebElement  projectPageProgressShorting;
 
+    @FindBy(xpath ="(//mat-progress-bar[@mode='determinate'])[1]")
+    public WebElement  projectPageProgressShortingVerify;
+
+    @FindBy(xpath ="(//div[contains(text(),'Total Cost')])[1]")
+    public WebElement  projectPageTotalCostShorting;
+
+    @FindBy(xpath ="(//td[contains(text(),'$0.00')])[1]")
+    public WebElement  projectPageTotalCostShortingVerify;
+
+    @FindBy(xpath ="(//div[contains(text(),' Start Date')])[1]")
+    public WebElement  projectPageStartDateShorting;
+
+    @FindBy(xpath ="(//td[contains(text(),'24 Sep 2021 ')])[1]")
+    public WebElement  projectPageStartDateShortingVerify;
 }

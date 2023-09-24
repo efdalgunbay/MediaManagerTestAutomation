@@ -97,4 +97,28 @@ public class UsersStepDefinitions {
 
     }
 
+    @Given("Click on the sort by name button")
+    public void sortbyNameButton() {
+        usersPage.nameShortingButton.click();
+        ReusableMethods.waitFor(2);
+    }
+
+    @Given("Appears to be sorted by name")
+    public void sortedbynName() {
+        usersPage.nameShortingverfiy.isDisplayed();
+        ReusableMethods.waitFor(2);
+    }
+
+    @Given("Sort by client is clicked")
+    public void clientisClicked() {
+        usersPage.clientShortingButton.click();
+        ReusableMethods.waitFor(2);
+
+    }
+
+    @Given("Appears to be sorted by client")
+    public void sortedbyClient() {
+        usersPage.clientShortingverfiy.isDisplayed();
+        ReusableMethods.waitFor(2);
+    }
 }

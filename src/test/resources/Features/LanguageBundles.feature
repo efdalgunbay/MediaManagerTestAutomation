@@ -26,3 +26,12 @@ Feature: Language Bundles
     When Click Language Bundles button
     And Keyword is entered in the client name field
     Then It appears that you are searching by client name keyword on Laguage Bundles Page
+
+  Scenario: 5L Checking Adding New Languages Bundle On Language Bundles Page
+    When Click Language Bundles button
+    And Click on the add new language button
+    And Any name can be entered in the name field
+    And Client name is entered in the client field
+    And Language option is selected as English
+    And Click on the save button
+    And It appears that the new language has been registered

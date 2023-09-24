@@ -37,6 +37,20 @@ public class UsersPage extends BasePage {
     @FindBy(xpath =" (//span[@class='mat-option-text'])[2]")
     public WebElement userPageRolePM;
 
+    @FindBy(xpath ="(//div[contains(text(),' Name ')])[1]")
+    public WebElement nameShortingButton;
+
+    @FindBy(xpath ="(//div[contains(text(),' Client ')])[1]")
+    public WebElement clientShortingButton;
+
+    @FindBy(xpath ="(//td[contains(text(),' Google ')])[1]")
+    public WebElement clientShortingverfiy;
+
+    @FindBy(xpath ="//td[contains(text(),' Accura-newuser ')]")
+    public WebElement nameShortingverfiy;
+
+
+
 
 
 }
