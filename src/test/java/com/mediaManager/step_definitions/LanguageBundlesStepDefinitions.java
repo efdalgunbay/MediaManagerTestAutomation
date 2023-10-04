@@ -84,13 +84,13 @@ public class LanguageBundlesStepDefinitions {
 
     @Given("Any name can be entered in the name field")
     public void enteredintheNameField() {
-        languageBundlesPage.languageBundlesNameField.sendKeys(ConfigReader.getProperty("new_laguage_name"));
+        languageBundlesPage.newLanguageBundlesNameField.sendKeys(ConfigReader.getProperty("new_laguage_name"));
         ReusableMethods.waitFor(2);
     }
 
     @Given("Client name is entered in the client field")
     public void enteredintheClientField() {
-        languageBundlesPage.languageBundlesclientNameField.sendKeys(ConfigReader.getProperty("new_laguage_client_name"));
+        languageBundlesPage.newLanguageBundlesclientNameField.sendKeys(ConfigReader.getProperty("new_laguage_client_name"));
         ReusableMethods.waitFor(2);
     }
 
@@ -100,7 +100,7 @@ public class LanguageBundlesStepDefinitions {
         ReusableMethods.waitFor(2);
         languageBundlesPage.LanguageEnglish.click();
         ReusableMethods.waitFor(2);
-        languageBundlesPage.languagetitle.click();
+        ReusableMethods.doubleClick(languageBundlesPage.languagetitle);
         ReusableMethods.waitFor(2);
     }
 

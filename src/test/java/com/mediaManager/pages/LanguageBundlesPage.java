@@ -28,7 +28,7 @@ public class LanguageBundlesPage extends BasePage{
     public WebElement addNewLanguage;
 
 
-    @FindBy(xpath ="(//span[@class='mat-button-focus-overlay'])[13]")
+    @FindBy(xpath ="(//button[@aria-haspopup='menu'])[4]")
     public WebElement addNewLanguageSelection;
 
     @FindBy(xpath ="//span[contains(text(),'English (American)')]")
@@ -37,14 +37,18 @@ public class LanguageBundlesPage extends BasePage{
     @FindBy(xpath ="//p[@class='lng-prgress-title']")
     public WebElement languagetitle;
 
+    @FindBy(xpath ="(//input[@id='name'])[2]")
+    public WebElement newLanguageBundlesNameField;
 
-    @FindBy(xpath ="(//span[@class='mat-button-focus-overlay'])[14]")
+
+    @FindBy(xpath ="//button[@type='submit']")
     public WebElement addNewLanguageSaveButton;
 
     @FindBy(xpath ="//h2[@id='swal2-title']")
     public WebElement addNewLanguageSuccessTitle;
 
-
+    @FindBy(xpath ="(//input[@id='client'])[2]")
+    public WebElement newLanguageBundlesclientNameField;
 
 
 

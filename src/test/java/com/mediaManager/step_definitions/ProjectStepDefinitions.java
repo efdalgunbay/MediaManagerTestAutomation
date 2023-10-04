@@ -178,6 +178,8 @@ UsersPage usersPage=new UsersPage();
     public void anyDateSelected() {
         projectPage.previousMonthButton.click();
         ReusableMethods.waitFor(1);
+        projectPage.previousMonthButton.click();
+        ReusableMethods.waitFor(1);
         projectPage.theTwentyFirstMonth.click();
         ReusableMethods.waitFor(1);
     }

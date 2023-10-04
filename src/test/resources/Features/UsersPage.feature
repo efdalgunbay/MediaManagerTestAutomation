@@ -34,6 +34,7 @@ Feature: Users Page
     And It is seen that the filter is made according to the selected Role
 
     Scenario: 6U Checking Sorting Functionality On User Page
+    When Click User button
     And Click on the sort by name button
     And Appears to be sorted by name
     And Sort by client is clicked
